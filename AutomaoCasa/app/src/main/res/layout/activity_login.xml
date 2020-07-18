@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#BCFF9800"
     tools:context=".LoginActivity">
 
     <TextView
@@ -14,30 +15,72 @@
         android:text="MyHouse"
         android:textColor="@android:color/holo_orange_dark"
         android:textSize="30sp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
+    <Button
+        android:id="@+id/btn_acess"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_round"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Acessar"
+        android:textColor="#FFFFFF"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/edit_password_login"
+        app:layout_constraintStart_toStartOf="@+id/edit_password_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_password_login" />
+
+    <TextView
+        android:id="@+id/lbl_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ainda não tem uma conta? click aqui."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:verticalScrollbarPosition="left"
+        app:layout_constraintEnd_toEndOf="@+id/btn_acess"
+        app:layout_constraintStart_toStartOf="@+id/btn_acess"
+        app:layout_constraintTop_toBottomOf="@+id/btn_acess" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="117dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/house" />
+
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edit_email_login"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/edit_round"
         android:drawableLeft="@drawable/user"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/email"
+        android:hint="E-mail"
         android:inputType="textEmailAddress"
-
         android:paddingLeft="10dp"
+        android:textStyle="italic"
+        android:typeface="serif"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edit_password_login"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="10dp"
@@ -45,46 +88,13 @@
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="Senha"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:background="@drawable/button_round"
-        android:text="Acessar"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Ainda não tem uma conta? click aqui."
-        android:textColor="#FFEB3B"
-
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintStart_toStartOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="117dp"
-        android:layout_height="122dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/house" />
+        android:textStyle="italic"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="@+id/edit_email_login"
+        app:layout_constraintStart_toStartOf="@+id/edit_email_login"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

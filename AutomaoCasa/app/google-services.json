@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211590978090",
+    "firebase_url": "https://appautomacao-6120b.firebaseio.com",
+    "project_id": "appautomacao-6120b",
+    "storage_bucket": "appautomacao-6120b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211590978090:android:b7d65fb4337121c1098153",
+        "android_client_info": {
+          "package_name": "com.example.automaocasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211590978090-d2mbmttlf2qupikg2a0ptgpi8vhnsi5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoArcZh2TbdtuRy6-2_J6Mnu1twaCHtI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211590978090-d2mbmttlf2qupikg2a0ptgpi8vhnsi5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
