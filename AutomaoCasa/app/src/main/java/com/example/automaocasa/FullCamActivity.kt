@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_cameras.*
 import kotlinx.android.synthetic.main.activity_full_cam.*
 
 class FullCamActivity : AppCompatActivity() {
-    private val BASE_URL_CAM1 ="http://192.168.1.103:8080/video"
+    private val BASE_URL_CAM1 ="http://192.168.1.101:8080/video"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,

@@ -16,13 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
     <GridLayout
@@ -46,7 +40,7 @@
 
 
             <LinearLayout
-                android:id="@+id/button_webView_cam1"
+                android:id="@+id/button_lampada_principal"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:clickable="true"
                 android:layout_width="match_parent"
@@ -162,6 +156,7 @@
 
 
                     <TextView
+                        android:id="@+id/txt_button_Sanca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="150dp"
@@ -207,6 +202,7 @@
 
                     <ImageView
 
+                        android:id="@+id/imv_button_sanca"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="7dp"
@@ -254,6 +250,7 @@
 
 
                     <TextView
+                        android:id="@+id/txt_button_fita"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="150dp"
@@ -299,6 +296,7 @@
 
                     <ImageView
 
+                        android:id="@+id/imv_button_fita"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="7dp"
@@ -345,6 +343,7 @@
 
 
                     <TextView
+                        android:id="@+id/txt_button_spot_focal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="150dp"
@@ -390,6 +389,7 @@
 
                     <ImageView
 
+                        android:id="@+id/imv_button_spot_focal"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="7dp"
@@ -437,6 +437,7 @@
 
 
                     <TextView
+                        android:id="@+id/txt_button_ventilador"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="150dp"
@@ -482,6 +483,7 @@
 
                     <ImageView
 
+                        android:id="@+id/imv_button_ventilador"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_marginLeft="7dp"
@@ -529,6 +531,7 @@
 
 
                     <TextView
+                        android:id="@+id/txt_button_portao"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="130dp"
@@ -571,16 +574,6 @@
                         android:layout_height="wrap_content">
 
                     </RelativeLayout>
-
-                    <ImageView
-
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginLeft="7dp"
-                        android:layout_marginTop="12dp"
-                        android:src="@drawable/off_white">
-
-                    </ImageView>
 
 
                 </LinearLayout>

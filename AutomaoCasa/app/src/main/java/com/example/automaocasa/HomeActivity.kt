@@ -14,6 +14,9 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.activity_home.view.*
+import kotlinx.android.synthetic.main.activity_login.view.*
+import kotlinx.android.synthetic.main.activity_register.view.*
 
 
 class HomeActivity : AppCompatActivity() {
@@ -30,7 +33,11 @@ class HomeActivity : AppCompatActivity() {
             override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                 super.onAuthenticationSucceeded(result)
                 notifyUser("Autenticado com sucesso!")
-                startActivity(Intent(this@HomeActivity,OpenGateActivity::class.java))
+
+                val status = StatusButtonMenu ( txt_button_portao.text.toString());
+                txt_button_portao.setTextColor(status.ColorButton())
+                txt_button_portao.text = status.StatusButton()
+
             }
         }
     @RequiresApi(Build.VERSION_CODES.P)
@@ -38,8 +45,53 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         checkBiometricSupport()
+        button_lampada_principal.textView
+
+        button_lampada_principal.setOnClickListener {
+            val status = StatusButtonMenu ( txt_button_Lampada.text.toString());
+            txt_button_Lampada.setTextColor(status.ColorButton())
+            txt_button_Lampada.text = status.StatusButton()
+            imv_button_lampada.setImageResource(status.ImbgButton());
+
+
+
+        }
+
+        button_lampada_sanca.setOnClickListener {
+            val status = StatusButtonMenu ( txt_button_Sanca.text.toString());
+            txt_button_Sanca.setTextColor(status.ColorButton())
+            txt_button_Sanca.text = status.StatusButton()
+            imv_button_sanca.setImageResource(status.ImbgButton());
+        }
+
+        button_fita_led.setOnClickListener {
+            val status = StatusButtonMenu ( txt_button_fita.text.toString());
+            txt_button_fita.setTextColor(status.ColorButton())
+            txt_button_fita.text = status.StatusButton()
+            imv_button_fita.setImageResource(status.ImbgButton());
+        }
+
+        button_spoot_focal.setOnClickListener {
+            val status = StatusButtonMenu ( txt_button_spot_focal.text.toString());
+            txt_button_spot_focal.setTextColor(status.ColorButton())
+            txt_button_spot_focal.text = status.StatusButton()
+            imv_button_spot_focal.setImageResource(status.ImbgButton());
+        }
+
+        button_ventilador.setOnClickListener {
+            val status = StatusButtonMenu ( txt_button_ventilador.text.toString());
+            txt_button_ventilador.setTextColor(status.ColorButton())
+            txt_button_ventilador.text = status.StatusButton()
+            imv_button_ventilador.setImageResource(status.ImbgButton());
+        }
+
+        button_cameras.setOnClickListener {
+            showCameras()
+        }
 
         button_controle_portao.setOnClickListener {
+
+
             val biometricPrompt = BiometricPrompt.Builder(this)
                 .setTitle("Autenticação da digital")
                 .setSubtitle("Autenciação para abertura do portão")
@@ -51,6 +103,9 @@ class HomeActivity : AppCompatActivity() {
             biometricPrompt.authenticate(getCancellationSignal(),mainExecutor,authenticationCallback)
 
         }
+
+
+
 
 
     }
@@ -83,4 +138,15 @@ class HomeActivity : AppCompatActivity() {
             true
         }else true
     }
+
+    private fun showCameras(){
+        val homeIntent = Intent(this,CamerasActivity::class.java)
+        startActivity(homeIntent)
+    }
+
+    private fun timer ()
+    {
+
+    }
+
 }
