@@ -8,9 +8,6 @@ class StatusButtonMenu {
 
     var Status : String = ""
 
-
-
-
     constructor() {
     }
 

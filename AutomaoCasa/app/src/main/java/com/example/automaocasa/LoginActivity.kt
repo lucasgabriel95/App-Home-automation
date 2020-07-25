@@ -53,6 +53,7 @@ class LoginActivity : AppCompatActivity() {
     private fun showHome(){
         val homeIntent = Intent(this,HomeActivity::class.java)
         startActivity(homeIntent)
+        this.finish();
     }
 
 

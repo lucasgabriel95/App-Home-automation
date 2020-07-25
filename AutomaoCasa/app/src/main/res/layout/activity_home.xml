@@ -8,15 +8,25 @@
     android:orientation="vertical"
     tools:context=".HomeActivity">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="872dp"
+        android:layout_height="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:background="#BCFF9800"
         app:layout_constraintCircleRadius="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <GridLayout
